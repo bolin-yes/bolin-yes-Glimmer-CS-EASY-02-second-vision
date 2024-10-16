@@ -59,7 +59,7 @@ void D(int location) {
     Node *current = head;
     Node *previous = NULL;
     int count = 1;
-    while (current!= NULL && count < location) {
+    while (current!= NULL && count < location){
         previous = current;
         current = current->next;
         count++;
@@ -123,7 +123,7 @@ void number(){
         break;//判断是否为最后一个数据
         }
         if(order==turn){
-        printf(fp,"%d\n",p->data);
+        fprintf(fp,"%d\n",p->data);
         Node*t=p;
         del(t);
         turn=turn+1;
